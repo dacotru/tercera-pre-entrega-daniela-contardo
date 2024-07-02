@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tareas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Organizador de Tareas</h1>
+    <div>
+        <button id="agregar-btn">Agregar Tarea</button>
+        <button id="eliminar-btn">Eliminar Tarea</button>
+        <button id="modificar-btn">Modificar Estado de Tarea</button>
+    </div>
+    <div id="formulario" class="hidden">
+        <input type="text" id="nombre-tarea" placeholder="Nombre de la tarea">
+        <select id="estado-tarea">
+            <option value="no">Pendiente</option>
+            <option value="si">Completada</option>
+        </select>
+        <button id="guardar-tarea">Guardar</button>
+    </div>
+    <div id="eliminar-form" class="hidden">
+        <input type="number" id="numero-eliminar" placeholder="Número de tarea a eliminar">
+        <button id="confirmar-eliminar">Eliminar</button>
+    </div>
+    <div id="modificar-form" class="hidden">
+        <input type="number" id="numero-modificar" placeholder="Número de tarea a modificar">
+        <select id="nuevo-estado-tarea">
+            <option value="no">Pendiente</option>
+            <option value="si">Completada</option>
+        </select>
+        <button id="confirmar-modificar">Modificar</button>
+    </div>
+    <div id="tareas"></div>
+    <div id="mensajes"></div>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

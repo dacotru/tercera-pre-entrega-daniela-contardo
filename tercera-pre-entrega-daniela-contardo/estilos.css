@@ -1,0 +1,47 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.tarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button#agregar-btn {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+button#eliminar-btn {
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+button#modificar-btn {
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+
+div#formulario, div#eliminar-form, div#modificar-form {
+    margin-top: 20px;
+}
+
+
